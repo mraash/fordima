@@ -15,7 +15,9 @@ def getWebsiteSoup(url: str) -> BeautifulSoup:
 
 
 def writeToFile(filename: str, text: str) -> None:
-    open(filename, 'w').write(text).close()
+    f = open(filename, 'w')
+    f.write(text)
+    f.close()
 
 
 # Specific functions
