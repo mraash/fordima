@@ -29,4 +29,6 @@ for postData in postListData:
     resultText = resultText + '\n'
 
 
-open('result.txt', 'w').write(resultText).close()
+resultFile = open('result.txt', 'w')
+resultFile.write(resultText)
+resultFile.close()
